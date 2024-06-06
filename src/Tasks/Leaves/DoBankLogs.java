@@ -28,7 +28,7 @@ public class DoBankLogs extends Leaf {
                 Sleep.sleepUntil(() -> Bank.isOpen(), 10000);
             }
 
-            Bank.depositAll(item -> !item.getName().toLowerCase().contains("axe"));
+            Bank.depositAll(item -> item.getName().equalsIgnoreCase(getSettings().treeType.getLogs()));
             return 1000;
         }
         if(!closestBank.getArea(3).contains(Players.getLocal())) {

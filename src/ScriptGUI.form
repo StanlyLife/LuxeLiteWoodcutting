@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="ScriptGUI">
+  <grid id="27dc6" binding="MotherPanel" layout-manager="GridBagLayout">
+    <constraints>
+      <xy x="278" y="527" width="395" height="545"/>
+    </constraints>
+    <properties>
+      <background color="-15983320"/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <grid id="fc37e" binding="headerPanel" layout-manager="GridBagLayout">
+        <constraints>
+          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="0.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <background color="-15983320"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <component id="b4d21" class="javax.swing.JLabel" binding="titleLabel">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="2" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+              <gridbag weightx="0.0" weighty="0.0"/>
+            </constraints>
+            <properties>
+              <background color="-2508288"/>
+              <font name="Exo ExtraBold" size="28"/>
+              <foreground color="-2508288"/>
+              <text value="LITE WOODCUTTING"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <component id="85cf5" class="javax.swing.JComboBox" binding="locationCombobox">
+        <constraints>
+          <grid row="7" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="0.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <background color="-15983320"/>
+        </properties>
+      </component>
+      <component id="e95d9" class="javax.swing.JComboBox" binding="actionCombobox">
+        <constraints>
+          <grid row="13" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="0.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <background color="-15983320"/>
+        </properties>
+      </component>
+      <component id="9e610" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="12" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="0.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <font name="Candara" size="18" style="1"/>
+          <text value="Action"/>
+        </properties>
+      </component>
+      <component id="86e9a" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="6" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="0.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <font name="Candara" size="18" style="1"/>
+          <text value="Location"/>
+        </properties>
+      </component>
+      <component id="ca7bf" class="javax.swing.JButton" binding="button1" default-binding="true">
+        <constraints>
+          <grid row="15" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="0.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <background color="-2508288"/>
+          <font name="Exo Medium" size="18" style="1"/>
+          <foreground color="-65546"/>
+          <text value="Start"/>
+        </properties>
+      </component>
+      <grid id="cd126" binding="radiusPanel" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
+        <constraints>
+          <grid row="10" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="0.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <background color="-15983320"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <component id="eed09" class="javax.swing.JSlider" binding="slider1" default-binding="true">
+            <constraints/>
+            <properties>
+              <background color="-15983320"/>
+              <maximum value="15"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <component id="64bd3" class="javax.swing.JLabel" binding="radiusLabel">
+        <constraints>
+          <grid row="9" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="0.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <font name="Candara" size="18" style="1"/>
+          <text value="Radius: 0"/>
+        </properties>
+      </component>
+      <component id="e33b" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="0.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <font name="Candara" size="18" style="1"/>
+          <text value="Tree type"/>
+        </properties>
+      </component>
+      <component id="1ab35" class="javax.swing.JComboBox" binding="treeTypeComboBox">
+        <constraints>
+          <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="0.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <background color="-15983320"/>
+        </properties>
+      </component>
+      <grid id="c775a" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
+        <constraints>
+          <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="0.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <background color="-15983320"/>
+        </properties>
+        <border type="none"/>
+        <children/>
+      </grid>
+      <grid id="b80f" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
+        <constraints>
+          <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="0.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <background color="-15983320"/>
+        </properties>
+        <border type="none"/>
+        <children/>
+      </grid>
+      <grid id="a5761" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
+        <constraints>
+          <grid row="14" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="0.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <background color="-15983320"/>
+        </properties>
+        <border type="none"/>
+        <children/>
+      </grid>
+      <grid id="7f60d" binding="borderLayoutPanelForIcon" layout-manager="BorderLayout" hgap="0" vgap="0">
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="0.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <background color="-15983320"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <component id="ad972" class="javax.swing.JLabel" binding="headerLogo">
+            <constraints border-constraint="Center"/>
+            <properties>
+              <text value=""/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <grid id="e4791" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
+        <constraints>
+          <grid row="11" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="0.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <background color="-15983320"/>
+        </properties>
+        <border type="none"/>
+        <children/>
+      </grid>
+      <grid id="b6947" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
+        <constraints>
+          <grid row="8" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="0.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <background color="-15983320"/>
+        </properties>
+        <border type="none"/>
+        <children/>
+      </grid>
+    </children>
+  </grid>
+</form>

@@ -13,7 +13,7 @@ public class DoDropLogs extends Leaf {
 
     @Override
     public int onLoop() {
-        Inventory.dropAll("Logs");
+        Inventory.dropAll(getSettings().treeType.getLogs());
         return 0;
     }
 }

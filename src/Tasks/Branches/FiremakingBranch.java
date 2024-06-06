@@ -8,6 +8,6 @@ import static Settings.ScriptSettings.getSettings;
 public class FiremakingBranch extends Branch {
     @Override
     public boolean isValid() {
-        return Inventory.contains(i -> i.getName().contains("wood")) && getSettings().shouldFiremake;
+        return Inventory.contains(i -> i.getName().toLowerCase().contains("logs"))  && getSettings().shouldFiremake;
     }
 }

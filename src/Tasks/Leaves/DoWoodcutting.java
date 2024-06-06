@@ -43,7 +43,7 @@ public class DoWoodcutting extends Leaf {
             }
 
 
-            List<GameObject> trees = GameObjects.all(t -> (t.getName().equalsIgnoreCase("tree") || t.getName().equalsIgnoreCase("dead tree"))  && getSettings().startArea.contains(t.getTile()));
+            List<GameObject> trees = GameObjects.all(t -> (t.getName().equalsIgnoreCase(getSettings().treeType.getName().toLowerCase())  && getSettings().startArea.contains(t.getTile())));
             if(trees.isEmpty() && GameObjects.all(t -> t.getName().equalsIgnoreCase("tree stump") && getSettings().startArea.contains(t.getTile())).isEmpty()) {
                 Logger.log("No trees in area - stopping script");
                 getScriptManager().stop();
@@ -69,7 +69,7 @@ public class DoWoodcutting extends Leaf {
             return null; // Player not loaded
         }
 
-        List<GameObject> trees = GameObjects.all(t -> t.getName().equalsIgnoreCase("tree") && getSettings().startArea.contains(t.getTile()));
+        List<GameObject> trees = GameObjects.all(t -> t.getName().equalsIgnoreCase(getSettings().treeType.getName().toLowerCase()) && getSettings().startArea.contains(t.getTile()));
         if (trees.isEmpty()) {
             return null; // No trees found
         }
